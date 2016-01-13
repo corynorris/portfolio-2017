@@ -1,7 +1,7 @@
 @extends('layouts.master');
 
 @section('title', 'Welcome')
-
+ 
 @section('content')
 <div id="main" class="toronto">
 <section class="intro ">
