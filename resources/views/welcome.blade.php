@@ -9,7 +9,7 @@
 @section('content')
 <section id="intro" class="toronto container-fluid">
  <div class="row">
-    <div  class="col-sm-7 col-md-6 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-12">
+    <div  class="col-sm-7 col-lg-5 col-sm-offset-1 col-lg-offset-1 col-xs-12">
         <div class="inner-container">
             <h1 id="hello">Cory</h1>
             <p>Programmer and Web Designer</p>
@@ -23,7 +23,6 @@
 </div>    
 <div class="bottom-center"><a id="more"  href="#introduction"><i  class="fa fa-chevron-circle-down fa-3x"></i></a></div>
 </section>
-
 <section id="introduction">
     <div class="row text-center">
         <div class="col-sm-6 col-sm-offset-3 bordered">

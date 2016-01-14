@@ -124,8 +124,9 @@ p {
     font-family: $font-family-serif;
 
     .inner-container {
-        padding: 10px;
-        background: rgba(255,255,255,0.3);
+        padding: 15px 10px;
+        background: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(255,255,255,0.10);
     }
 
     h1,
@@ -135,6 +136,7 @@ p {
     // animation-direction: forward;
     h1 {
         font-size: 50px;
+        margin-top: 0px;
         animation: fadeInRight 0.6s linear 0.3s forwards;
     }
     p {
@@ -166,8 +168,12 @@ p {
 @media (max-width: 768px) {
     .navbar-default{ background: black;}
 
-    // Move the intro higher so it's against a black background on mobile devices
+
+}
+@media (max-height: 768px) {
+        // Move the intro higher so it's against a black background on mobile devices
     // and flows nicer
+
     #intro {
         padding-top: 1.5*$navbar-height;
     }
