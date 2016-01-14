@@ -8,7 +8,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img src="images/portfolio/hello.svg" height="35px" alt=""></i>
+            @if (Request::is('*welcome') || Request::is('/'))                  
+                <a class="navbar-brand" href="#"><i class="fa fa-home"></i>
+            @else
+                <a class="navbar-brand" href="/"><i class="fa fa-home"></i>
+            @endif
             </a>
         </div>
 
