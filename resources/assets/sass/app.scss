@@ -1,55 +1,105 @@
-@import 'partials/variables.scss'; // colors, fonts etc...
 @import 'partials/mixins'; // custom mixins
-//@ import 'partials/typography';
+@import 'partials/variables.scss'; // colors, fonts etc...
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'portfolio-hover-effect.scss';
+@import 'timeline.scss';
+
+// Border box and don't show horizontal scrollbar
+body {
+     overflow-x: hidden;
+}
+
 *,
 *::after,
 *::before {
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
+// Utility class to make something full screen
+.fullscreen {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
 }
 
-body {
-    width: 100%;
-    height: 100%;
+// Utility class to center something at the bottom of the page
+.bottom-center {
+    bottom: 10px;
+    left: 50%;
+    position: absolute;
+    #more {
+
+        color: #fff;
+    }
 }
 
-#main {
-    width: 100%;
-    height: 100%;
-    min-width: 100%;
+// Start all content after our navbar
+.content > section {
+    padding-top: $navbar-height;
+}
+
+// a full page background
+.toronto {
+    // source: https://pixabay.com/en/toronto-city-cn-tower-skydome-698496/
+    //  CC0 Public Domain
+    //  Free for commercial use 
+    //  No attribution required 
+    background: url(../images/toronto.jpg) no-repeat center center fixed;
+    background-size: cover;
     min-height: 100%;
 }
 
-.m-header {
-    z-index: 1;
-}
-.toronto {
-    background: url(../images/toronto.jpg) no-repeat center center;
-    background-size: cover;
-}
 
-.white {
-    background: #fff;
-    background-size: cover;
-}
-
-.navbar-nav > li > a:hover {
+// bold links on hover
+.active, .navbar-nav > li > a:hover {
     font-weight: bold;
 }
 
+// Draw a line under the active link
+.active::after {
+    position: absolute;
+    content: '';
+    border-bottom: 3px solid black;
+    width: 76%;
+    height: 2px;
+    bottom: 28%;
+    left: 12%;
+}
 
-/*
- * CSS Animations
- */
+// make sure it's visible on smaller devices
+@media (max-width: 768px) {
+    .navbar-default{ background: black;}
+}
 
+// Make headers red on all but our main page
+#portfolio,
+#resume,
+#blog,
+#contact {
+    color: black;
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: $brand-primary;
+        text-align: center;
+    }
+}
+p {
+    font-size: 17.5px;
+
+}
+
+// Required for SmoothState.js transitions
 .m-scene {
     /** Basic styles for an animated element */
     .scene_element {
-        animation-duration: 0.25s;
+        animation-duration: 0.7s;
         transition-timing-function: ease-in;
         animation-fill-mode: both;
     }
@@ -71,46 +121,64 @@ body {
             animation-direction: alternate-reverse;
         }
     }
-    /** Don't draw scrollbars **/
-    .container {
-        overflow-x: hidden;
-    }
 }
 
-// Animated Intro
-// .intro {
-//     padding-left: 16%;
-    
-//     .intro-content {
-//         h1,
-//         p {
-//             opacity: 0;
-//         }
-//         // animation-direction: forward;
-//         h1 {
-//             animation: fadeInRight 0.6s linear 0.3s forwards;
-//         }
-//         p {
-//             animation: fadeInRight 0.6s linear 0.7s forwards;
-//         }
-//         .action-wrapper {
-//             padding: 15px 0;
-//             a+a {
-//                 margin-left: 10px;
-//             }
-//             a {
-//                 opacity: 0;
-//                 animation: bounce-rotate 1.4s linear 0.7s forwards;
-//             }
-//         }
-//     }
-// }
+// An animated intro to grab peoples attention.
+#intro {
+    padding-top: 4*$navbar-height;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: $font-family-serif;
 
+    .inner-container {
+        padding: 10px;
+        background: rgba(255,255,255,0.25);
+    }
 
-/*
- * Keyframes
- */
+    h1,
+    p {
+        opacity: 0;
+    }
+    // animation-direction: forward;
+    h1 {
+        font-size: 50px;
+        animation: fadeInRight 0.6s linear 0.3s forwards;
+    }
+    p {
+        animation: fadeInRight 0.6s linear 0.7s forwards;
+    }
+    .action-wrapper {
+        a {
+            opacity: 0;
+            letter-spacing: 0px;
+            animation: bounce-rotate 1.4s linear 0.7s forwards;
+        }
 
+        .btn {
+            margin: 3px;
+            padding: 10px 20px;
+            border: 0 none;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+}
+ .red {
+    color: $brand-primary;
+}
+
+#introduction {
+
+    .bordered {
+        border: 1px solid $brand-primary;
+    }
+
+}
+
+/////////////////////////
+// Animation Keyframes //
+/////////////////////////
 @keyframes fadeIn {
     0% {
         opacity: 0;

@@ -1,4 +1,4 @@
-<nav id="mainNav" class="navbar transparent navbar-default navbar-fixed-top">
+<nav id="mainNav" class="navbar {{ $navbarStyle }} navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home"></i>
+            <a class="navbar-brand" href="/"><i class="fa fa-home"></i>
             </a>
         </div>
 
@@ -16,17 +16,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="/work">Work</a>
+                    <a {{ (Request::is('*portfolio') ? 'class=active' : '') }} href="/portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Resume</a>
+                    <a {{ (Request::is('*resume') ? 'class=active' : '') }} href="/resume">Resume</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">Blog</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
+     <!--            <li>
+                    <a class="page-scroll" href="/blog">Blog</a>
+                </li> -->
+<!--                 <li>
+                    <a {{ (Request::is('*contact') ? 'class=active' : '') }} href="/contact">Contact</a>
+                </li> -->
             </ul>
         </div>
         <!-- /.navbar-collapse -->

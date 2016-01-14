@@ -60,5 +60,3 @@ $(function() {
         },
         smoothState = $page.smoothState(options).data('smoothState');
 });
-
-//# sourceMappingURL=app.js.map

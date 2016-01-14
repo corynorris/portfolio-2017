@@ -1,34 +1,45 @@
 // colors 
 $brand-primary: #e74c3c;
-$gray-base: darken(#ffffff,20%);
+//$gray-base: darken(#ffffff,20%);
 
 // fonts  
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
 
-$font-family-serif: 'Lato', serif;
-$font-family-sans-serif: 'Roboto', sans-serif;
-$line-height-base: 1.62;
-$font-size-base: 15px;
+//switched sans and serif for easier use with bootstrap
+$font-family-sans-serif: 'Lato', serif;
+$font-family-serif: 'Open Sans', sans-serif;
+$line-height-base: 1.8;
+$font-size-base: 16px;
 
 // Navbar
-$navbar-height: 60px;
+$navbar-height: 50px;
 $navbar-color: darken(#fff, 20%);
 $screen-xs: 480px;
 $screen-xs-min: $screen-xs;
 $grid-float-breakpoint: $screen-xs-min;
-$navbar-height: 45px;
-$navbar-default-bg: #000;
+$navbar-default-bg: rgba(0,0,0,0);
+
 // Navbar - links
 $navbar-default-link-color: $navbar-color;
-//$navbar-default-border: lighten($navbar-default-bg, 16.2%);
 $navbar-default-link-hover-color: lighten($navbar-color, 20%);
-// Navbar-brand
+
+// // Navbar-brand
 $navbar-default-brand-hover-color: lighten($navbar-color, 20%);
 $navbar-default-toggle-hover-bg: darken($navbar-default-link-hover-color, 30%);
 $navbar-default-toggle-icon-bar-bg: $brand-primary;
 
+// inverse is all red
+$navbar-inverse-bg: #fff;
+$navbar-inverse-color: $brand-primary;
+$navbar-inverse-link-color: $brand-primary;
+$navbar-inverse-link-active-color: $brand-primary;
+$navbar-inverse-link-hover-color: lighten($navbar-inverse-link-color, 15%);
+$navbar-inverse-border: #fff;
+$navbar-inverse-brand-hover-color: lighten($navbar-inverse-color, 20%);
+$navbar-inverse-toggle-hover-bg: lighten($navbar-default-link-hover-color, 30%);
+$navbar-inverse-toggle-icon-bar-bg: $brand-primary;
+$navbar-inverse-toggle-border-color: $brand-primary;
 
 //buttons
 $btn-border-radius-base: 0px;
