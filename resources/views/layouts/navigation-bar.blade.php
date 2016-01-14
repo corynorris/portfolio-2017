@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><i class="fa fa-home"></i>
+            <a class="navbar-brand" href="/"><img src="images/portfolio/hello.svg" height="35px" alt=""></i>
             </a>
         </div>
 
@@ -16,10 +16,25 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a {{ (Request::is('*portfolio') ? 'class=active' : '') }} href="/portfolio">Portfolio</a>
+                    @if (Request::is('*welcome') || Request::is('/'))                  
+                    <a class="active active-inverse" href="#">Home</a>
+                    @else
+                    <a href="/">Home</a>
+                    @endif
                 </li>
-                <li>
-                    <a {{ (Request::is('*resume') ? 'class=active' : '') }} href="/resume">Resume</a>
+                <li>                    
+                    @if (Request::is('*portfolio'))                  
+                    <a class="active active-default" href="#">Portfolio</a>
+                    @else
+                    <a href="/portfolio">Portfolio</a>
+                    @endif                
+                </li>
+                <li>                    
+                    @if (Request::is('*resume'))                  
+                    <a class="active active-default" href="#">Resume</a>
+                    @else
+                    <a href="/resume">Resume</a>
+                    @endif                
                 </li>
      <!--            <li>
                     <a class="page-scroll" href="/blog">Blog</a>

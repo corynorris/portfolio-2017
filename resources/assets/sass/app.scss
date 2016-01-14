@@ -60,21 +60,13 @@ body {
     font-weight: bold;
 }
 
-// Draw a line under the active link
-.active::after {
-    position: absolute;
-    content: '';
-    border-bottom: 3px solid black;
-    width: 76%;
-    height: 2px;
-    bottom: 28%;
-    left: 12%;
+.active-inverse {
+    color: #fff;
 }
 
-// make sure it's visible on smaller devices
-@media (max-width: 768px) {
-    .navbar-default{ background: black;}
-}
+
+
+
 
 // Make headers red on all but our main page
 #portfolio,
@@ -126,13 +118,13 @@ p {
 // An animated intro to grab peoples attention.
 #intro {
     padding-top: 4*$navbar-height;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: #fff;
     font-family: $font-family-serif;
 
     .inner-container {
         padding: 10px;
-        background: rgba(255,255,255,0.25);
+        background: rgba(255,255,255,0.3);
     }
 
     h1,
@@ -168,10 +160,37 @@ p {
     color: $brand-primary;
 }
 
-#introduction {
 
-    .bordered {
-        border: 1px solid $brand-primary;
+// make sure it's visible on smaller devices
+@media (max-width: 768px) {
+    .navbar-default{ background: black;}
+
+    // Move the intro higher so it's against a black background on mobile devices
+    // and flows nicer
+    #intro {
+        padding-top: 1.5*$navbar-height;
+    }
+}
+
+@media (min-width: $screen-xs) {
+    // Draw a line under the active link
+    a.active-default::after {
+        position: absolute;
+        content: '';
+        border-bottom: 3px solid black;
+        width: 76%;
+        height: 2px;
+        bottom: 28%;
+        left: 12%;
+    }
+    a.active-inverse::after {
+        position: absolute;
+        content: '';
+        border-bottom: 3px solid white;
+        width: 76%;
+        height: 2px;
+        bottom: 28%;
+        left: 12%;
     }
 
 }

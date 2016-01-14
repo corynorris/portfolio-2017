@@ -14,19 +14,21 @@ $font-size-base: 16px;
 
 // Navbar
 $navbar-height: 50px;
-$navbar-color: darken(#fff, 20%);
+$navbar-color: white;
 $screen-xs: 480px;
 $screen-xs-min: $screen-xs;
 $grid-float-breakpoint: $screen-xs-min;
 $navbar-default-bg: rgba(0,0,0,0);
 
 // Navbar - links
-$navbar-default-link-color: $navbar-color;
-$navbar-default-link-hover-color: lighten($navbar-color, 20%);
+$navbar-default-link-color: darken($navbar-color,15%);
+$navbar-default-link-hover-color: $navbar-color;
 
-// // Navbar-brand
+// Navbar-brand
 $navbar-default-brand-hover-color: lighten($navbar-color, 20%);
-$navbar-default-toggle-hover-bg: darken($navbar-default-link-hover-color, 30%);
+
+// Navbar - toggle
+$navbar-default-toggle-hover-bg: $navbar-default-link-hover-color;
 $navbar-default-toggle-icon-bar-bg: $brand-primary;
 
 // inverse is all red

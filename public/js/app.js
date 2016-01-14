@@ -1,6 +1,8 @@
 
 
 var smoothScroll = function() {
+
+  // Hide more content indicator after scroll
     $(window).scroll(function() {
       if ($(this).scrollTop() >= 50) { //use `this`, not `document`
           $('#more').css({
@@ -12,6 +14,8 @@ var smoothScroll = function() {
           });
       }
   });
+
+  
   $('#more').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);

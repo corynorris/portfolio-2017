@@ -3911,14 +3911,14 @@ tbody.collapse.in {
   background-color: transparent;
   border-color: transparent; }
   .navbar-default .navbar-brand {
-    color: #cccccc; }
+    color: #d9d9d9; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
       color: white;
       background-color: transparent; }
   .navbar-default .navbar-text {
     color: #777; }
   .navbar-default .navbar-nav > li > a {
-    color: #cccccc; }
+    color: #d9d9d9; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: white;
       background-color: transparent; }
@@ -3931,7 +3931,7 @@ tbody.collapse.in {
   .navbar-default .navbar-toggle {
     border-color: #ddd; }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-      background-color: #b3b3b3; }
+      background-color: white; }
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #e74c3c; }
   .navbar-default .navbar-collapse,
@@ -3942,7 +3942,7 @@ tbody.collapse.in {
     color: #555; }
   @media (max-width: 479px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: #cccccc; }
+      color: #d9d9d9; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: white;
         background-color: transparent; }
@@ -3953,11 +3953,11 @@ tbody.collapse.in {
       color: #ccc;
       background-color: transparent; } }
   .navbar-default .navbar-link {
-    color: #cccccc; }
+    color: #d9d9d9; }
     .navbar-default .navbar-link:hover {
       color: white; }
   .navbar-default .btn-link {
-    color: #cccccc; }
+    color: #d9d9d9; }
     .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
       color: white; }
     .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
@@ -5973,18 +5973,8 @@ body {
 .active, .navbar-nav > li > a:hover {
   font-weight: bold; }
 
-.active::after {
-  position: absolute;
-  content: '';
-  border-bottom: 3px solid black;
-  width: 76%;
-  height: 2px;
-  bottom: 28%;
-  left: 12%; }
-
-@media (max-width: 768px) {
-  .navbar-default {
-    background: black; } }
+.active-inverse {
+  color: #fff; }
 
 #portfolio,
 #resume,
@@ -6040,12 +6030,12 @@ p {
 
 #intro {
   padding-top: 200px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   color: #fff;
   font-family: "Open Sans", sans-serif; }
   #intro .inner-container {
     padding: 10px;
-    background: rgba(255, 255, 255, 0.25); }
+    background: rgba(255, 255, 255, 0.3); }
   #intro h1,
   #intro p {
     opacity: 0; }
@@ -6072,8 +6062,29 @@ p {
 .red {
   color: #e74c3c; }
 
-#introduction .bordered {
-  border: 1px solid #e74c3c; }
+@media (max-width: 768px) {
+  .navbar-default {
+    background: black; }
+  #intro {
+    padding-top: 75px; } }
+
+@media (min-width: 480px) {
+  a.active-default::after {
+    position: absolute;
+    content: '';
+    border-bottom: 3px solid black;
+    width: 76%;
+    height: 2px;
+    bottom: 28%;
+    left: 12%; }
+  a.active-inverse::after {
+    position: absolute;
+    content: '';
+    border-bottom: 3px solid white;
+    width: 76%;
+    height: 2px;
+    bottom: 28%;
+    left: 12%; } }
 
 @-webkit-keyframes fadeIn {
   0% {
