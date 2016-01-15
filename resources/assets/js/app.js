@@ -1,5 +1,3 @@
-
-
 var smoothScroll = function() {
 
   // Hide more content indicator after scroll
@@ -15,7 +13,6 @@ var smoothScroll = function() {
       }
   });
 
-  
   $('#more').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -23,7 +20,7 @@ var smoothScroll = function() {
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
-                }, 1000);
+                }, 800);
                 return false;
             }
         }
@@ -60,7 +57,6 @@ $(function() {
                 }
             },
             onAfter: smoothScroll
-            
         },
         smoothState = $page.smoothState(options).data('smoothState');
 });

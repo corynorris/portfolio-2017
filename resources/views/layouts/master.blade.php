@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Custom CSS (include Bootstrap) -->
     <link rel="stylesheet" href="css/app.css">
-
 </head>
 <body>
     <div id="smooth" class="m-scene">
@@ -25,7 +24,7 @@
     </div>
     @section('scripts')
     <!-- JQuery 2.1.4 -->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> 
     <!-- Smooth State 0.7.2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.7.2/jquery.smoothState.min.js"></script>        
     <!-- Bootstrap 3.3.6 -->
