@@ -10,11 +10,11 @@ use App\Http\Controllers\Controller;
 class ContactController extends Controller
 {
     public function create(){
-    	return view('contact');
+    	return view('contact.contact');
     }
 
     public function store(ContactFormRequest $request) {
- 		\Mail::send('emails.contact',
+ 		\Mail::send('contact.email',
 	        array(
 	            'name' => $request->get('name'),
 	            'email' => $request->get('email'),
@@ -23,6 +23,6 @@ class ContactController extends Controller
 		        $message->from('contact@corynorris.me');
 		        $message->to('corynorris@gmail.com', 'Admin')->subject('Personal Portfolio Feedback');
 	    	});
-    	 return \Redirect::route('contact')->with('message', 'Thanks for contacting me!');
+    	 return \Redirect::route('contact.contact')->with('message', 'Thanks for contacting me!');
     }
 }
