@@ -3,8 +3,7 @@ $brand-primary: #e74c3c;
 //$gray-base: darken(#ffffff,20%);
 
 // fonts  
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+// imported in main website to improve speed 
 
 //switched sans and serif for easier use with bootstrap
 $font-family-sans-serif: 'Lato', serif;

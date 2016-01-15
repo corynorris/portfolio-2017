@@ -6,6 +6,8 @@
     <meta name="Description" 
           content="@yield('description')">
 
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato|Open+Sans">
     <!-- Font Awesome 4.5.0 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Custom CSS (include Bootstrap) -->
