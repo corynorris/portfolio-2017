@@ -1,20 +1,27 @@
 @extends('layouts.master')
 
-@section('title', 'Contact')
+@section('title', 'Portfolio')
 
-@section('navbar')
-	@include('layouts.navigation-bar', ['navbarStyle'=>'navbar-inverted'])
+@section('description', "The personal portfolio website of Cory Norris. This page outlines a few of the projects I've completed recently and includes links to where you can browse them and their associated code.")
+
+
+@section('navbar') 
+@include('layouts.navigation-bar', ['navbarStyle'=>'navbar-inverse'])
 @endsection
 
+
 @section('content')
+
+
 <section id="contact" class="container">
     <div class="row">
-	    @if(Session::has('message'))
+    	@if(Session::has('message'))
+    	<h1>Thank You</h1>
 		    <div class="alert alert-info">
 		      {{Session::get('message')}}
 		    </div>
-		@endif
-    	<h1>Contact Me</h1>
+		@else
+		<h1>Contact Me</h1>
 		@if ($errors->any())
 		    <ul class="alert alert-danger">
 		        @foreach ($errors->all() as $error)
@@ -22,7 +29,7 @@
 		        @endforeach
 		    </ul>
 		@endif
-		{!! Form::open(array('url' => 'contact', 'method' => 'POST')) !!}
+		{!! Form::open(array('url'=>'contact','method'=>'post', 'id'=>'contact-form', 'class'=>'no-smoothState')) !!}
 		<div class="form-group">
 			{!! Form::label('Your Name') !!}
 			{!! Form::text('name', null,
@@ -33,7 +40,7 @@
 
 		<div class="form-group">
 			{!! Form::label('Your E-mail Address') !!}
-			{!! Form::text('email', null,
+			{!! Form::email('email', null,
 			array('required',
 			'class'=>'form-control',
 			'placeholder'=>'Your e-mail address')) !!}
@@ -49,9 +56,11 @@
 
 		<div class="form-group">
 			{!! Form::submit('Contact Me!',
-			array('class'=>'btn btn-primary')) !!}
+			array('class'=>'btn btn-primary', 'id'=>"contact-form-submit")) !!}
 		</div>
 		{!! Form::close() !!}
+		@endif
+		
 	</div>
 </section>
 @endsection

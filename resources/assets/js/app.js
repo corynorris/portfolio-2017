@@ -1,4 +1,5 @@
-var smoothScroll = function() {
+var pageLoadFunctions = function() {
+
 
   // Hide more content indicator after scroll
     $(window).scroll(function() {
@@ -14,6 +15,7 @@ var smoothScroll = function() {
   });
 
   $('#more').click(function() {
+        console.log('clicked');
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -25,19 +27,19 @@ var smoothScroll = function() {
             }
         }
     });
+
 };
 
-smoothScroll();
+pageLoadFunctions();
 
 $(function() {
     'use strict';
     var $page = $('#smooth'),
         options = {
             debug: false,
-            blacklist: '#more',
+            blacklist: '.no-smoothState',
             prefetch: true,
             cacheLength: 2,
-            forms: 'form',
             onStart: {
                 duration: 750, // Duration of our animation
                 render: function($container) {
@@ -56,7 +58,7 @@ $(function() {
                     $container.html($newContent);
                 }
             },
-            onAfter: smoothScroll
+            onAfter: pageLoadFunctions
         },
         smoothState = $page.smoothState(options).data('smoothState');
 });

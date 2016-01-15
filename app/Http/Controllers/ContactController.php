@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ContactFormRequest;
+
+use Illuminate\Http\RedirectResponse;
+
+use Mail;
 
 class ContactController extends Controller
 {
@@ -14,15 +19,17 @@ class ContactController extends Controller
     }
 
     public function store(ContactFormRequest $request) {
- 		\Mail::send('contact.email',
-	        array(
-	            'name' => $request->get('name'),
-	            'email' => $request->get('email'),
-	            'user_message' => $request->get('message')
-	        ), function($message) {
-		        $message->from('contact@corynorris.me');
-		        $message->to('corynorris@gmail.com', 'Admin')->subject('Personal Portfolio Feedback');
-	    	});
-    	 return \Redirect::route('contact.contact')->with('message', 'Thanks for contacting me!');
+
+
+        // Firing an email is one of the slowest things you can do
+        // So queuing is standard, and stops the user from having to wait
+        Mail::queue('emails.contact', compact('request'), function ($message)
+        {
+            $message->from('contact@corynorris.me')
+                    ->to('corynorris@gmail.com')
+                    ->subject('Personal Portfolio Contact');
+        });
+
+    	 return redirect('contact')->with('message', 'Thanks for contacting me!');
     }
 }

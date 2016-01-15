@@ -23,7 +23,7 @@
     </div>
   </div>
 </div>
-<div class="bottom-center"><a id="more"  href="#introduction"><i  class="fa fa-chevron-circle-down fa-3x"></i></a></div>
+<div class="bottom-center"><a id="more" class=".no-smoothState" href="#introduction"><i  class="fa fa-chevron-circle-down fa-3x"></i></a></div>
 </section>
 <section id="introduction">
 <div class="container">
