@@ -29,12 +29,12 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3 col-xs-12 text-center">
-      <img src="/images/hello.svg" height="70px" alt="Hello">
-        <p>I'm a Canadian developer from Ontario, Canada. I've been programming for as long as I can remember. Starting with spreadsheets and basic on my trusty <a href="https://www.google.ca/search?q=tandy+2000&espv=2&biw=799&bih=838&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj4rbP7sqjKAhVD0h4KHWVdDL8Q_AUIBigB">Tandy2000</a>. Since then, I've been on a <a href="/resume">continual pursuit of learning</a> and improving my programming and design skill.</p>
+      <img src="/images/hello.svg" height="70px" width="175px" alt="Hello">
+        <p>I'm a Canadian developer from <a href="https://www.google.ca/maps/place/Toronto,+ON/@43.7168789,-79.937099,9z/data=!3m1!4b1!4m2!3m1!1s0x89d4cb90d7c63ba5:0x323555502ab4c477?hl=en">Toronto ON, Canada</a>. I've been programming since I got my first computer, a hard working <a href="https://en.wikipedia.org/wiki/Tandy_2000">Tandy2000</a>. Although I started with simple spreadsheets and basic, I've been <a href="/resume">continually learning</a> since then.</p>
     </div>
   </div>
-  <br><br
- > <div class="row">
+  <br>
+  <div class="row">
     <div class="col-sm-6 col-sm-offset-3 col-xs-12 text-center">
         <p><strong>Three things I believe in</strong></p>
         <div class="values">
@@ -44,12 +44,11 @@
        </div>
     </div>
   </div>
-  <br>
+  <br><br>
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3 text-center">
-      <br><br>
-      <p>If there's anything you'd like to discuss, please feel free to contact me at corynorris@gmail.com.</p>
-      <img src="/images/divider.svg" height="70px" alt="Divider">
+      <p>If there's anything you'd like to discuss, please don't hesitate to <a href="/contact">contact me</a>.</p>
+      <img src="/images/divider.svg" height="70px" width="140px"  alt="Divider">
      </div>
   </div>
 </div>

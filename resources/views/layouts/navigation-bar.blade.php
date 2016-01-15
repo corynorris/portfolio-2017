@@ -40,12 +40,13 @@
                     <a href="/resume">Resume</a>
                     @endif
                 </li>
-     <!--            <li>
-                    <a class="page-scroll" href="/blog">Blog</a>
-                </li> -->
-<!--                 <li>
-                    <a {{ (Request::is('*contact') ? 'class=active' : '') }} href="/contact">Contact</a>
-                </li> -->
+                <li>
+                    @if (Request::is('*contact'))
+                    <a class="active active-default" href="#">Contact</a>
+                    @else
+                    <a href="/contact">Contact</a>
+                    @endif
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
