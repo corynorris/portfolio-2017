@@ -22,7 +22,7 @@
     </div>
     @section('scripts')
     <!-- JQuery 2.1.4 -->
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script> 
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
     <!-- Smooth State 0.7.2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.7.2/jquery.smoothState.min.js"></script>        
     <!-- Bootstrap 3.3.6 -->
