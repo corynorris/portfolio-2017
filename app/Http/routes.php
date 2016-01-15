@@ -10,40 +10,20 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('portfolio', function() {
-	return view ('portfolio');
-});
-
-Route::get('resume', function() {
-	return view ('resume');
-});
-
-// Route::get('blog', function() {
-// 	return view ('blog');
-// });
-
-Route::get('contact', function() {
-	return view ('contact');
-});
-
-
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
-|
-*/
-
 Route::group(['middleware' => ['web']], function () {
-    //
+
+	Route::get('/', function () {
+	    return view('welcome');
+	});
+
+	Route::get('portfolio', function() {
+		return view ('portfolio');
+	});
+
+	Route::get('resume', function() {
+		return view ('resume');
+	});
+
+	Route::get('contact', 'ContactController@create');
+	Route::post('contact', 'ContactController@store');    // Add your routes here
 });
