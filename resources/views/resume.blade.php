@@ -2,6 +2,9 @@
 
 @section('title', 'Resume')
 
+@section('description', "The personal portfolio website of Cory Norris. This page gives a brief history of what I've been up to, including my volunteering, travel and work history.")
+
+
 @section('navbar') 
 @include('layouts.navigation-bar', ['navbarStyle'=>'navbar-inverse'])
 @endsection
@@ -29,7 +32,7 @@
 
 
 	<div class="page-header">
-		<h1 id="timeline">Learn, Work, Help</h1>
+		<h1 id="timeline">Learning, Working, and Helping</h1>
 	</div>
 	<ul class="timeline">
 		<li>

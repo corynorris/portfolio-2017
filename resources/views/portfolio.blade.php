@@ -2,6 +2,9 @@
 
 @section('title', 'Portfolio')
 
+@section('description', "The personal portfolio website of Cory Norris. This page outlines a few of the projects I've completed recently and includes links to where you can browse them and their associated code.")
+
+
 @section('navbar') 
 @include('layouts.navigation-bar', ['navbarStyle'=>'navbar-inverse'])
 @endsection
@@ -9,6 +12,12 @@
 
 @section('content')
 <section id="portfolio" class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Some of My Work</h1>
+            <hr>
+        </div>
+    </div>
 <!--         <div class="row">
             <div class="col-sm-12">
                 <div class="page-header"><h1>Portfolio</h1></div>

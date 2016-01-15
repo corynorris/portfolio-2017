@@ -2,8 +2,10 @@
 
 @section('title', 'Welcome')
 
+@section('description', "The personal portfolio website of Cory Norris. This site demontrates some of my latest works as well as a brief history of my work experience, volunteering and continuous learning in order to paint a loose picture of what I'm capable of.")
+
 @section('navbar') 
-@include('layouts.navigation-bar', ['navbarStyle'=>'navbar-default'])
+  @include('layouts.navigation-bar', ['navbarStyle'=>'navbar-default'])
 @endsection
 
 @section('content')
@@ -34,13 +36,13 @@
             <p>For me, design should be <u>3 things</u>:</p>                    
             <div class="row">  
                 <div class="col-sm-4 col-xs-12">
-                  <b class="red">Simple</b><br>to understand. 
+                  <strong class="red">Simple</strong><br>to understand. 
               </div>
               <div class="col-sm-4 col-xs-12">
-                  <b class="red">Easy</b><br>to visually navigate.  
+                  <strong class="red">Easy</strong><br>to visually navigate.  
               </div>
               <div class="col-sm-4 col-xs-12">
-                  <b class="red">Complete</b><br>with information.
+                  <strong class="red">Complete</strong><br>with information.
               </div>
             </div>
             <hr>
