@@ -1,1 +1,68 @@
-var smoothScroll=function(){$(window).scroll(function(){$(this).scrollTop()>=50?$("#more").css({visibility:"hidden"}):$("#more").css({visibility:"visible"})}),$("#more").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var t=$(this.hash);if(t=t.length?t:$("[name="+this.hash.slice(1)+"]"),t.length)return $("html,body").animate({scrollTop:t.offset().top},1e3),!1}})};smoothScroll(),$(function(){"use strict";var t=$("#smooth"),o={debug:!1,blacklist:"#more",prefetch:!0,cacheLength:2,forms:"form",onStart:{duration:750,render:function(t){t.addClass("is-exiting"),i.restartCSSAnimations()}},onReady:{duration:0,render:function(t,o){t.removeClass("is-exiting"),t.html(o)}},onAfter:smoothScroll},i=t.smoothState(o).data("smoothState")});
+
+
+var smoothScroll = function() {
+
+  // Hide more content indicator after scroll
+    $(window).scroll(function() {
+      if ($(this).scrollTop() >= 50) { //use `this`, not `document`
+          $('#more').css({
+              'visibility': 'hidden'
+          });
+      } else {
+          $('#more').css({
+              'visibility': 'visible'
+          });
+      }
+  });
+
+  
+  $('#more').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+};
+
+smoothScroll();
+
+$(function() {
+    'use strict';
+    var $page = $('#smooth'),
+        options = {
+            debug: false,
+            blacklist: '#more',
+            prefetch: true,
+            cacheLength: 2,
+            forms: 'form',
+            onStart: {
+                duration: 750, // Duration of our animation
+                render: function($container) {
+                    // Add your CSS animation reversing class
+                    $container.addClass('is-exiting');
+                    // Restart your animation
+                    smoothState.restartCSSAnimations();
+                }
+            },
+            onReady: {
+                duration: 0,
+                render: function($container, $newContent) {
+                    // Remove your CSS animation reversing class
+                    $container.removeClass('is-exiting');
+                    // Inject the new content
+                    $container.html($newContent);
+                }
+            },
+            onAfter: smoothScroll
+            
+        },
+        smoothState = $page.smoothState(options).data('smoothState');
+});
+
+//# sourceMappingURL=app.js.map
