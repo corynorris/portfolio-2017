@@ -28,46 +28,30 @@
 <section id="introduction">
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3 text-center">
+    <div class="col-sm-6 col-sm-offset-3 col-xs-12 text-center">
       <h1><img src="/images/hello.svg" height="70px" alt="Hello"></h1>
-      <p>I'm a Canadian developer from Ontario, Canada. I've been programming for as long as I can remember, starting with my trusty <a href="https://www.google.ca/search?q=tandy+2000&espv=2&biw=799&bih=838&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj4rbP7sqjKAhVD0h4KHWVdDL8Q_AUIBigB">Tandy2000</a>. Since then, I've been on a <a href="/resume">continual pursuit of learning</a> and improving my programming and design ability.</p>
-      <hr>
-      <p>For me, websites should be <strong class="red">3 things</strong>:</p>
-    </div>
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-    <div class="col-sm-2">      
-      <strong class="red">Simple</strong>
-    </div>
-    <div class="col-sm-10"> enough to understand in 10 seconds or less.</div>
+        <p>I'm a Canadian developer from Ontario, Canada. I've been programming for as long as I can remember. Starting with spreadsheets and basic on my trusty <a href="https://www.google.ca/search?q=tandy+2000&espv=2&biw=799&bih=838&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj4rbP7sqjKAhVD0h4KHWVdDL8Q_AUIBigB">Tandy2000</a>. Since then, I've been on a <a href="/resume">continual pursuit of learning</a> and improving my programming and design skill.</p>
     </div>
   </div>
-  <div class="row"><br></div>
-   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-    <div class="col-sm-2">      
-      <strong class="red">Complete</strong>
-    </div>
-    <div class="col-sm-10"> enough to confirm if the value proposal matches the users requirements.
- </div>
-    </div>
-  </div>
-  <div class="row"><br></div>
-   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-    <div class="col-sm-2">      
-      <strong class="red">Fast</strong>
-    </div>
-    <div class="col-sm-10"> enough to get things done without splitting focus.</div>
+  <br><br
+ > <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 col-xs-12 text-center">
+        <p><strong>Three things I believe in</strong></p>
+        <div class="values">
+          <div class="left">Consistent</div><div class="right">delivery accross every page.</div>
+          <div class="left">Fast</div><div class="right">websites that hold focus.</div>
+          <div class="left">Intuitive</div><div class="right">enough to understand in a glance.</div>
+       </div>
     </div>
   </div>
+  <br>
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3 text-center">
-      <hr>
-      <p>If there's anything you'd like to talk to me about, please feel free to contact me at corynorris@gmail.com.</p>
+      <br><br>
+      <p>If there's anything you'd like to discuss, please feel free to contact me at corynorris@gmail.com.</p>
       <img src="/images/divider.svg" height="70px" alt="Divider">
      </div>
   </div>
-  </div>
+</div>
 </section>
 @endsection

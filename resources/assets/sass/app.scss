@@ -159,11 +159,26 @@ p {
         }
     }
 }
- .red {
-    color: $brand-primary;
+
+.values {
+    width: 360px;
+    margin: 0 auto;
+    .left {
+        font-size: 17px;
+        width: 100px;
+        text-align: right;
+        float: left;
+        color: $brand-primary;
+        weight: 500;
+    }
+    .right {
+        font-size: 17px;
+        padding-left:5px;
+        width: 255px;
+        text-align: left;
+        float: right;
+    }
 }
-
-
 #introduction {
     a {
         text-decoration: underline;
@@ -173,8 +188,6 @@ p {
 // make sure it's visible on smaller devices
 @media (max-width: 768px) {
     .navbar-default{ background: black;}
-
-
 }
 @media (max-height: 768px) {
         // Move the intro higher so it's against a black background on mobile devices
