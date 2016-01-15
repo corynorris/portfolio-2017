@@ -26,6 +26,7 @@
 <div class="bottom-center"><a id="more"  href="#introduction"><i  class="fa fa-chevron-circle-down fa-3x"></i></a></div>
 </section>
 <section id="introduction">
+<div class="container">
   <div class="row text-center">
     <div class="col-sm-6 col-sm-offset-3 bordered">
 
@@ -58,6 +59,7 @@
 
 
      </div>
+  </div>
   </div>
 </section>
 @endsection
