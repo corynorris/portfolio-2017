@@ -164,6 +164,12 @@ p {
 }
 
 
+#introduction {
+    a {
+        text-decoration: underline;
+    }
+}
+
 // make sure it's visible on smaller devices
 @media (max-width: 768px) {
     .navbar-default{ background: black;}
