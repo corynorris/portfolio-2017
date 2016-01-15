@@ -1,13 +1,13 @@
 You received a message from CoryNorris.me:
 
 <p>
-Name: {{ $request->get('name') }}
+Name: {{ $name }}
 </p>
 
 <p>
-{{ $request->get('email') }}
+From: {{ $email }}
 </p>
 
 <p>
-{{ $request->get('message') }}
+{{ $messageData }}
 </p>

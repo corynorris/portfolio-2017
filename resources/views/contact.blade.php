@@ -2,7 +2,7 @@
 
 @section('title', 'Portfolio')
 
-@section('description', "The personal portfolio website of Cory Norris. This page outlines a few of the projects I've completed recently and includes links to where you can browse them and their associated code.")
+@section('description', "The personal portfolio website of Cory Norris. A contact form for getting in touch with me.")
 
 
 @section('navbar') 
@@ -15,6 +15,7 @@
 
 <section id="contact" class="container">
     <div class="row">
+    <div class="col-sm-12">
     	@if(Session::has('message'))
     	<h1>Thank You</h1>
 		    <div class="alert alert-info">
@@ -60,7 +61,7 @@
 		</div>
 		{!! Form::close() !!}
 		@endif
-		
+		</div>
 	</div>
 </section>
 @endsection
