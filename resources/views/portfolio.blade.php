@@ -14,7 +14,7 @@
 <section id="portfolio" class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h1>Some of My Work</h1>
+            <h1>Some of my Work</h1>
             <hr>
         </div>
     </div>

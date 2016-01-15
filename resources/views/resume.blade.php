@@ -32,7 +32,7 @@
 
 
 	<div class="page-header">
-		<h1 id="timeline">Learning, Working, and Helping</h1>
+		<h1 id="timeline">What I've been up to.</h1>
 	</div>
 	<ul class="timeline">
 		<li>
