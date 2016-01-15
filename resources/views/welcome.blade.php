@@ -29,7 +29,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3 col-xs-12 text-center">
-      <h1><img src="/images/hello.svg" height="70px" alt="Hello"></h1>
+      <img src="/images/hello.svg" height="70px" alt="Hello">
         <p>I'm a Canadian developer from Ontario, Canada. I've been programming for as long as I can remember. Starting with spreadsheets and basic on my trusty <a href="https://www.google.ca/search?q=tandy+2000&espv=2&biw=799&bih=838&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj4rbP7sqjKAhVD0h4KHWVdDL8Q_AUIBigB">Tandy2000</a>. Since then, I've been on a <a href="/resume">continual pursuit of learning</a> and improving my programming and design skill.</p>
     </div>
   </div>
