@@ -15,8 +15,11 @@ body {
 *::before {
     box-sizing: border-box;
 }
-
-
+p {
+    a {
+        text-decoration: underline;
+    }
+}
 // Utility class to make something full screen
 .fullscreen {
     top: 0;
@@ -51,12 +54,17 @@ body {
     //  CC0 Public Domain
     //  Free for commercial use 
     //  No attribution required 
-    background: url(../images/toronto-min.jpg) no-repeat center center fixed;
+    background: url(../images/toronto-small-min.jpg) no-repeat center center fixed;
     background-size: cover;
     min-height: 100%;
 }
 
-
+// Add padding to Navbar
+.navbar {
+    padding-top: 8px;
+    padding-right: 25px;
+    padding-left: 10px;
+}
 // bold links on hover
 .active, .navbar-nav > li > a:hover {
     font-weight: bold;
@@ -146,8 +154,10 @@ p {
     }
     p {
         animation: fadeInRight 0.6s linear 0.7s forwards;
+        margin-bottom: 0;
     }
     .action-wrapper {
+        margin: 10px;
         a {
             opacity: 0;
             letter-spacing: 0px;
@@ -165,35 +175,40 @@ p {
     }
 }
 
-.values {
-    width: 360px;
-    margin: 0 auto;
-    .left {
-        font-size: 17px;
-        width: 100px;
-        text-align: right;
-        float: left;
-        color: $brand-primary;
-        font-weight: 700;
-    }
-    .right {
-        font-size: 17px;
-        padding-left:5px;
-        width: 255px;
-        text-align: left;
-        float: right;
+@media(min-width: 460px) {
+    .values {
+        width: 430px;
+
+        .left {
+            font-size: 17px;
+            width: 130px;
+            text-align: right;
+            float: left;
+            padding: 0;
+            margin: 0;
+
+        }
+        .right {
+            white-space: pre-wrap; 
+            font-size: 17px;
+            padding-left:5px;
+            width: 295px;
+            text-align: left;
+            float: right;
+        }
     }
 }
-#introduction {
-    a {
-        text-decoration: underline;
-    }
+
+.title {
+    font-weight: 700;
+    color: $brand-primary;
 }
 
 // make sure it's visible on smaller devices
 @media (max-width: 768px) {
     .navbar-default{ background: black;}
 }
+
 @media (max-height: 768px) {
         // Move the intro higher so it's against a black background on mobile devices
     // and flows nicer

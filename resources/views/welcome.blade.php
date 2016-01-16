@@ -20,6 +20,7 @@
         <a href="https://bitbucket.org/cnorris/" class="btn btn-primary"><i class="fa fa-bitbucket"></i> Bitbucket</a>
         <a href="https://github.com/corynorris" class="btn btn-primary"><i class="fa fa-github"></i> Github</a>
       </div>
+      <p><a href="/resume">learn more about me</a></p>
     </div>
   </div>
 </div>
@@ -37,16 +38,19 @@
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3 col-xs-12 text-center">
         <p><strong>Three things I believe in</strong></p>
+        <p></p>
+        <p></p>
+        <p></p>
         <div class="values">
-          <div class="left">Consistent</div><div class="right">delivery accross every page.</div>
-          <div class="left">Fast</div><div class="right">websites that hold focus.</div>
-          <div class="left">Intuitive</div><div class="right">enough to understand in a glance.</div>
+          <div class="row"><div class="title left col-sm-3 col-xs-12">Consistent</div><div class="right col-sm-9 col-xs-12">delivery accross every page.</div></div>
+          <div class="row"><div class="title left col-sm-3 col-xs-12">Fast</div><div class="right col-sm-9 col-xs-12">websites that hold focus.</div></div>
+          <div class="row"><div class="title left col-sm-3 col-xs-12">Intuitive</div><div class="right col-sm-9 col-xs-12">enough to understand in a glance.</div></div>
        </div>
     </div>
   </div>
   <br><br>
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3 text-center">
+    <div class="col-sm-6 col-sm-offset-3 col-xs-12 text-center">
       <p>If there's anything you'd like to discuss, please don't hesitate to <a href="/contact">contact me</a>.</p>
       <img src="/images/divider.svg" height="70px" width="140px"  alt="Divider">
      </div>
