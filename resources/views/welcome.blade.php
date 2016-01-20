@@ -42,7 +42,7 @@
         <p></p>
         <p></p>
         <div class="values">
-          <div class="row"><div class="title left col-sm-3 col-xs-12">Consistent</div><div class="right col-sm-9 col-xs-12">delivery accross every page.</div></div>
+          <div class="row"><div class="title left col-sm-3 col-xs-12">Consistent</div><div class="right col-sm-9 col-xs-12">delivery across every page.</div></div>
           <div class="row"><div class="title left col-sm-3 col-xs-12">Fast</div><div class="right col-sm-9 col-xs-12">websites that hold focus.</div></div>
           <div class="row"><div class="title left col-sm-3 col-xs-12">Intuitive</div><div class="right col-sm-9 col-xs-12">enough to understand in a glance.</div></div>
        </div>
