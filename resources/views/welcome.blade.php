@@ -11,7 +11,7 @@
 @section('content')
 <section id="intro" class="toronto container-fluid">
  <div class="row">
-  <div  class="col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-1 col-lg-offset-1 col-lg-7 col-xs-12">
+  <div  class="col-sm-offset-1 col-sm-10 col-lg-offset-2 col-xs-12">
       <div class="intro-animation">
         <div class="top-animation">
          <div class="top-inner"><h1>Cory</h1><p>Programmer & Web Designer</p></div>
