@@ -11,20 +11,27 @@
 @section('content')
 <section id="intro" class="toronto container-fluid">
  <div class="row">
-  <div  class="col-sm-7 col-lg-5 col-sm-offset-1 col-lg-offset-1 col-xs-12">
-    <div class="inner-container">
-      <h1 id="hello">Cory</h1>
-      <p>Programmer and Web Designer</p>
-      <div class="action-wrapper">
-        <a href="http://codepen.io/corynorris/" class="btn btn-primary"><i class="fa fa-codepen" aria-hidden="true"></i> Codepen</a>
-        <a href="https://bitbucket.org/cnorris/" class="btn btn-primary"><i class="fa fa-bitbucket"></i> Bitbucket</a>
-        <a href="https://github.com/corynorris" class="btn btn-primary"><i class="fa fa-github"></i> Github</a>
+  <div  class="col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-1 col-lg-offset-1 col-lg-7 col-xs-12">
+      <div class="intro-animation">
+        <div class="top-animation">
+         <div class="top-inner"><h1>Cory</h1><p>Programmer & Web Designer</p></div>
+         </div>
+            
+        <div class="bottom-animation">
+          <div class="bottom-inner faded-background">
+            <div class="action-wrapper">
+              <a href="http://codepen.io/corynorris/" class="btn btn-primary"><i class="fa fa-codepen" aria-hidden="true"></i> Codepen</a>
+              <a href="https://bitbucket.org/cnorris/" class="btn btn-primary"><i class="fa fa-bitbucket"></i> Bitbucket</a>
+              <a href="https://github.com/corynorris" class="btn btn-primary"><i class="fa fa-github"></i> Github</a>
+            </div>
+          
+            <p><a class="red-bordered" href="/resume">learn more about me</a></p>
+          </div>
+        </div>
       </div>
-      <p><a href="/resume">learn more about me</a></p>
-    </div>
   </div>
 </div>
-<div class="bottom-center"><a id="more" class=".no-smoothState" href="#introduction"><i  class="fa fa-chevron-circle-down fa-3x"></i></a></div>
+<div class="bottom-center"><a id="more" class=".no-smoothState adjust-for-width" href="#introduction"><i  class="fa fa-chevron-circle-down fa-3x"></i></a></div>
 </section>
 <section id="introduction">
 <div class="container">

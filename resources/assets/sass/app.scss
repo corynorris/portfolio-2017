@@ -38,9 +38,13 @@ p {
     left: 50%;
     position: absolute;
     #more {
-
         color: #fff;
     }
+}
+
+.adjust-for-width {
+    position: relative;
+    left: -50%;
 }
 
 // Start all content after our navbar
@@ -99,7 +103,7 @@ p {
 .m-scene {
     /** Basic styles for an animated element */
     .scene_element {
-        animation-duration: 0.7s;
+        animation-duration: 0.6s;
         transition-timing-function: ease-in;
         animation-fill-mode: both;
     }
@@ -130,32 +134,54 @@ p {
     color: #fff;
     font-family: $font-family-serif;
 
-    .inner-container {
-        padding: 15px 10px;
-        background: rgba(0, 0, 0, 0.6);
-        border: 1px solid rgba(255,255,255,0.10);
+    .intro-animation {
+        text-align: center;
+        display:block;
+        .top-animation {
+            h1 {
+                opacity: 0;
+                animation: fadeIn 0.3s linear 0.7s forwards;
+            }
+
+            p {
+                opacity: 0;
+                animation: fadeInLeft 0.3s linear 1.1s forwards;
+            }
+        }
+        
+        .bottom-animation {
+            overflow: hidden;     
+            margin: 0 10px;       
+        }
+        .bottom-inner {
+            opacity: 0;
+            animation: growX 0.5s ease-in 1.5s forwards,
+                       slideInDown 0.8s ease-in 2.0s forwards;
+        }
     }
+
+
+    
 
     h1,
     p {
-        opacity: 0;
+        font-weight: bold;
+        display: inline-block;
     }
     // animation-direction: forward;
     h1 {
         font-size: 50px;
         margin-top: 0px;
-        animation: fadeInRight 0.6s linear 0.3s forwards;
+        // animation: fadeInRight 0.6s linear 0.3s forwards;
     }
     p {
-        animation: fadeInRight 0.6s linear 0.7s forwards;
-        margin-bottom: 0;
+        // animation: fadeInRight 0.6s linear 0.7s forwards;
+        margin: 0;
     }
     .action-wrapper {
-        margin: 10px;
+        margin-bottom: 10px;
         a {
-            opacity: 0;
             letter-spacing: 0px;
-            animation: bounce-rotate 1.4s linear 0.7s forwards;
         }
 
         .btn {
@@ -167,12 +193,27 @@ p {
             text-transform: uppercase;
         }
     }
+    .red-bordered {
+        padding: 8px;
+        border: 2px solid $navbar-inverse-link-color;
+        text-decoration: none;
+    }
+    .red-bordered:hover {
+        border-color: $navbar-inverse-link-color;
+        color: #fff;
+        background: $navbar-inverse-link-color;
+    }
+    .faded-background {
+        padding: 15px 10px;
+        background: rgba(255, 255, 255, 1);
+        //border: 1px solid rgba(255,255,255,0.10);
+    }
 }
 // Add padding to Navbar
 .navbar {
     padding-top: 8px;
-    padding-right: 25px;
-    padding-left: 10px;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
 }
 
 @media(min-width: 460px) {
@@ -314,4 +355,65 @@ p {
         opacity: 1;
         transform: none;
     }
+}
+
+$slideInAmount: 97%;
+@keyframes growX {
+  0% {
+    opacity: 1;
+    top: -5px;
+    transform: translateY(-$slideInAmount) scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-$slideInAmount)  scaleX(1);
+   }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes slideInDown {
+  0% {
+    opacity: 1;
+    transform: translateY(-$slideInAmount);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  55% {
+        opacity: 1;
+    transform: translateY(-20%);
+  }
+
+  70% {
+        opacity: 1;
+    transform: translateY(0%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-12%);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  95% {
+    opacity: 1;
+    transform: translateY(-6%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
