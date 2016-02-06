@@ -44,7 +44,7 @@
 				</div>
 				<div class="timeline-body">
 					<ul>
-						<li>Solved more than 250 challenges related to HTML5, CSS and Javscript</li>
+						<li>Solved more than 250 challenges related to HTML5, CSS and Javscript.</li>
 						<li>Created a small portfolio of projects, viewable on my Codepen.</li>
 						<li>Gave and received feedback to and from other campers.</li>
 					</ul>
