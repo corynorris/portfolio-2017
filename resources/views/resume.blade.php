@@ -5,7 +5,7 @@
 @section('description', "The personal portfolio website of Cory Norris. This page gives a brief history of what I've been up to, including my volunteering, travel and work history.")
 
 
-@section('navbar') 
+@section('navbar')
 @include('layouts.navigation-bar', ['navbarStyle'=>'navbar-inverse'])
 @endsection
 
@@ -21,7 +21,7 @@
 				<li>Experience with numerous web technologies and frameworks (e.g. Html5, Css, JavaScript, JQuery, Vue, React, Bootstrap, Sass, PHP, Laravel and Yii, Npm, Gulp, etc).</li>
 				<li>Created, modified and maintained all aspects of databases in Oracle, MySql and MsSql.</li>
 				<li>Fluent in French and English.</li>
-			</ul>			
+			</ul>
 		</div>
 		<div class="col-sm-6">
 			<div class="page-header">
@@ -42,11 +42,11 @@
 					<h4 class="timeline-title">Front End Development Certificate &#8210; FreeCodeCamp</h4>
 					<p><small class="text-muted"><i class="fa fa-globe"></i> Online — <i class="fa fa-clock-o"></i> Dec 2015</small></p>
 				</div>
-				<div class="timeline-body">         
+				<div class="timeline-body">
 					<ul>
 						<li>Solved more than 250 challenges related to HTML5, CSS and Javscript</li>
 						<li>Created a small portfolio of projects, viewable on my Codepen.</li>
-						<li>Gave and received feedback to other campers and.</li>
+						<li>Gave and received feedback to and from other campers.</li>
 					</ul>
 				</div>
 			</div>
@@ -67,7 +67,7 @@
 					<h4 class="timeline-title">English Teacher &#8210; Busan Global Village</h4>
 					<p><small class="text-muted"><i class="fa fa-globe"></i> Busan, Korea — <i class="fa fa-clock-o"></i> Nov 2014 - Nov 2015</small></p>
 				</div>
-				<div class="timeline-body">         
+				<div class="timeline-body">
 					<ul>
 						<li>Engaged students and seeded their interested in the English language and its importance.</li>
 						<li>Created and maintained themed lesson plans around various common day to day interactions.</li>
@@ -189,7 +189,7 @@
 					</ul>
 				</div>
 			</div>
-		</li>		
+		</li>
 		<li class="timeline-inverted">
 			<div class="timeline-badge success"><i class="fa fa-heart"></i></div>
 			<div class="timeline-panel">
