@@ -1,13 +1,26 @@
 {
-  "private": true,
-  "devDependencies": {
-    "gulp": "^3.8.8"
-  },
-  "dependencies": {
-    "laravel-elixir": "^4.0.0",
-    "bootstrap-sass": "^3.0.0"
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My personal website for showcasing my portfolio and experience\"",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
   },
   "scripts": {
-    "postinstall": "composer install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corynorris/personal-website.git"
+  },
+  "author": "Cory Norris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corynorris/personal-website/issues"
+  },
+  "homepage": "https://github.com/corynorris/personal-website#readme",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0"
+  }
 }
