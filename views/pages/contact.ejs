@@ -10,7 +10,7 @@
     <!-- Font Awesome 4.5.0 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Custom CSS (include Bootstrap) -->
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app.css" defer>
 </head>
 
 <body>
@@ -20,31 +20,37 @@
         </div>
         <div class="content fullscreen scene_element scene_element--fadeinup">
             <section id="contact" class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1>Contact Me</h1>
-                        <form method="POST" action="http://159.203.7.138/contact" accept-charset="UTF-8" id="contact-form" class="no-smoothState">
-                            <input name="_token" type="hidden" value="sCFDRGpoSRVfDDJP70fUYnqLX4LetTJchX5QZzDo">
-                            <div class="form-group">
-                                <label for="Your Name">Your Name</label>
-                                <input required="required" class="form-control" placeholder="Your name" name="name" type="text">
-                            </div>
-                            <div class="form-group">
-                                <label for="Your E-mail Address">Your E-mail Address</label>
-                                <input required="required" class="form-control" placeholder="Your e-mail address" name="email" type="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="Your Message">Your Message</label>
-                                <textarea required="required" class="form-control" placeholder="Your message" name="message" cols="50" rows="10"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input class="btn btn-primary" id="contact-form-submit" type="submit" value="Contact Me!">
-                            </div>
-                        </form>
-                    </div>
+
+            <div class="col-sm-12">
+            <%if (typeof message !== 'undefined') { %>
+                <h1>Thank You</h1>
+                <div class="alert alert-info">
+                    <%= message %>
                 </div>
-            </section>
+            <% } else { %>
+                <h1>Contact Me</h1>
+                <form method="POST" action="/contact" accept-charset="UTF-8" id="contact-form" class="no-smoothState">
+                    <div class="form-group">
+                        <label for="Your Name">Your Name</label>
+                        <input required="required" class="form-control" placeholder="Your name" name="name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="Your E-mail Address">Your E-mail Address</label>
+                        <input required="required" class="form-control" placeholder="Your e-mail address" name="email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Your Message">Your Message</label>
+                        <textarea required="required" class="form-control" placeholder="Your message" name="message" cols="50" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-primary" id="contact-form-submit" type="submit" value="Contact Me!">
+                    </div>
+                </form>
+                <% } %>
+            </div>
         </div>
+        </section>
+    </div>
     </div>
     <!-- JQuery 2.1.4 -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
