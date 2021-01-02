@@ -7,4 +7,4 @@ A portfolio project that shows smooth inter-page transitions and css animations
 https://corynorris.github.io/life/
 
 ## Other Notes
-This project was bootstrapped (express) [https://expressjs.com/]
+This project was bootstrapped (express)[https://expressjs.com/]
