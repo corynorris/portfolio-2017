@@ -21,7 +21,7 @@
   "homepage": "https://github.com/corynorris/personal-website#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "ejs": "^3.0.1",
+    "ejs": "^3.1.7",
     "express": "^4.17.3",
     "mailgun-js": "^0.22.0"
   },
