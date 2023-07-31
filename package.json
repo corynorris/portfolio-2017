@@ -20,14 +20,13 @@
   },
   "homepage": "https://github.com/corynorris/personal-website#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.7",
-    "express": "^4.17.3",
-    "mailgun-js": "^0.22.0"
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^11.0.0",
-    "eslint-plugin-import": "^2.20.1"
+    "eslint": "^8.46.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.0"
   }
 }
